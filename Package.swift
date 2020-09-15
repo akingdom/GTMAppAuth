@@ -5,8 +5,8 @@ import PackageDescription
 let package = Package(
     name: "GTMAppAuth",
     platforms: [
-        .macOS(.v10_10),
-        .iOS(.v8),
+        .macOS(.v10_11),
+        .iOS(.v9),
         .tvOS(.v9),
         .watchOS(.v2)
     ],
@@ -17,7 +17,7 @@ let package = Package(
         ),
     ],
     dependencies: [
-        .package(url: "https://github.com/google/gtm-session-fetcher.git", from: "1.4.0")
+            .package(url: "https://github.com/google/gtm-session-fetcher.git", from: "1.4.0")
     ],
     targets: [
         .target(
@@ -25,11 +25,20 @@ let package = Package(
             dependencies: [
                 "GTMSessionFetcher"
             ],
-            path: "Source",
+            path: "Sources/GTMAppAuth",
+            sources: [
+                ".",
+                "../ObjC",
+                "../ObjC/GTMOAuth2KeychainCompatibility",
+                "../ObjC/iOS",
+                "../ObjC/macOS"
+            ],
             publicHeadersPath: "SwiftPackage",
             cSettings: [
-                .headerSearchPath(".")
+                .headerSearchPath("."),
+                .headerSearchPath("../ObjC"),
+                .headerSearchPath("./ObjC/GTMOAuth2KeychainCompatibility")
             ]
-        ),
+        )
     ]
 )
