@@ -16,12 +16,12 @@
         limitations under the License.
  */
 
-#import "GTMAppAuthFetcherAuthorization.h"
+#import "../GTMAppAuthFetcherAuthorization.h"
 
 // #ifndef GTMAPPAUTH_USER_IMPORTS
 // #import <AppAuth/AppAuthCore.h>
 // #else // GTMAPPAUTH_USER_IMPORTS
-#import "AppAuth-iOS/Source/AppAuthCore.h"
+#import "../AppAuth-iOS/Source/AppAuthCore.h"
 // #endif // GTMAPPAUTH_USER_IMPORTS
 
 #define GTMOAuth2AssertValidSelector GTMBridgeAssertValidSelector
