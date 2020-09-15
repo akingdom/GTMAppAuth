@@ -21,7 +21,7 @@
 // #ifndef GTMAPPAUTH_USER_IMPORTS
 // #import <AppAuth/AppAuthCore.h>
 // #else // GTMAPPAUTH_USER_IMPORTS
-#import "AppAuthCore.h"
+#import "AppAuth-iOS/Source/AppAuthCore.h"
 // #endif // GTMAPPAUTH_USER_IMPORTS
 
 #import "GTMKeychain.h"
