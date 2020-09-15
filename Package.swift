@@ -26,10 +26,6 @@ let package = Package(
                 "GTMSessionFetcher"
             ],
             path: "Source",
-            exclude: [
-            ],
-            sources: [
-            ],
             publicHeadersPath: "SwiftPackage",
             cSettings: [
                 .headerSearchPath(".")

@@ -15,6 +15,9 @@
         See the License for the specific language governing permissions and
         limitations under the License.
  */
+#include <TargetConditionals.h>
+
+#if !TARGET_OS_IPHONE  // Assume platform is MACOS -- we can refine this further if needed.
 
 #import "GTMKeychain.h"
 
@@ -180,3 +183,4 @@ static const char *kKeychainAccountName = "OAuth";
 }
 
 @end
+#endif
