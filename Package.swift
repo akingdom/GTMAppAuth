@@ -6,7 +6,7 @@ let package = Package(
     name: "GTMAppAuth",
     platforms: [
         .macOS(.v10_11),
-        .iOS(.v9),
+        .iOS(.v9),// originally .v7
         .tvOS(.v9),
         .watchOS(.v2)
     ],
@@ -25,19 +25,17 @@ let package = Package(
             dependencies: [
                 "GTMSessionFetcher"
             ],
-            path: "Sources/GTMAppAuth",
+            path: "Source",
             sources: [
-                ".",
-                "../ObjC",
-                "../ObjC/GTMOAuth2KeychainCompatibility",
-                "../ObjC/iOS",
-                "../ObjC/macOS"
+                "."//,
+                // "GTMOAuth2KeychainCompatibility",
+                // "iOS",
+                // "macOS"
             ],
             publicHeadersPath: "SwiftPackage",
             cSettings: [
                 .headerSearchPath("."),
-                .headerSearchPath("../ObjC"),
-                .headerSearchPath("./ObjC/GTMOAuth2KeychainCompatibility")
+                .headerSearchPath("GTMOAuth2KeychainCompatibility")
             ]
         )
     ]
