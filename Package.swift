@@ -69,9 +69,9 @@ let package = Package(
             ],
             sources: [
                 ".",
-                // "GTMOAuth2KeychainCompatibility",
-                // "iOS",
-                // "macOS"
+                "GTMOAuth2KeychainCompatibility",
+                "iOS",
+                "macOS",
                 "AppAuth-iOS/Source",
                 "AppAuth-iOS/Source/AppAuthCore",
                 "AppAuth-iOS/Source/AppAuthCore/OIDAuthState.h",
