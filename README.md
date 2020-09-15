@@ -18,6 +18,11 @@ from GTMOAuth2 to GTMAppAuth preserving previously serialized authorizations
 
 ## Setup
 
+If you use [Swift Package Manager](https://swift.org/package-manager/),
+simply Add Package Dependency in Xcode:
+
+    https://github.com/akingdom/GTMAppAuth.git
+  
 If you use [CocoaPods](https://guides.cocoapods.org/using/getting-started.html),
 simply add:
 
