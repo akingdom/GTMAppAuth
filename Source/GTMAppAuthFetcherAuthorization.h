@@ -16,11 +16,11 @@
         limitations under the License.
  */
 
-#ifndef GTMAPPAUTH_USER_IMPORTS
-#import <GTMSessionFetcher/GTMSessionFetcher.h>
-#else // GTMAPPAUTH_USER_IMPORTS
+// #ifndef GTMAPPAUTH_USER_IMPORTS
+// #import <GTMSessionFetcher/GTMSessionFetcher.h>
+// #else // GTMAPPAUTH_USER_IMPORTS
 #import "GTMSessionFetcher.h"
-#endif // GTMAPPAUTH_USER_IMPORTS
+// #endif // GTMAPPAUTH_USER_IMPORTS
 
 @class OIDAuthState;
 @class OIDServiceConfiguration;

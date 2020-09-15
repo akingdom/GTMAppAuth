@@ -18,11 +18,11 @@
 
 #import "GTMOAuth2KeychainCompatibility.h"
 
-#ifndef GTMAPPAUTH_USER_IMPORTS
-#import <AppAuth/AppAuthCore.h>
-#else // GTMAPPAUTH_USER_IMPORTS
+// #ifndef GTMAPPAUTH_USER_IMPORTS
+// #import <AppAuth/AppAuthCore.h>
+// #else // GTMAPPAUTH_USER_IMPORTS
 #import "AppAuthCore.h"
-#endif // GTMAPPAUTH_USER_IMPORTS
+// #endif // GTMAPPAUTH_USER_IMPORTS
 
 #import "GTMKeychain.h"
 
