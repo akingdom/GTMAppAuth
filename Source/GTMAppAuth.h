@@ -23,8 +23,10 @@
 #elif TARGET_OS_WATCH
 #elif TARGET_OS_IOS
 #import "GTMOAuth2KeychainCompatibility/GTMOAuth2KeychainCompatibility.h"
+#import "gtm-session-fetcher/Source/GTMSessionFetcherIOS/GTMSessionFetcherIOS.h"
 #elif TARGET_OS_MAC
 #import "GTMOAuth2KeychainCompatibility/GTMOAuth2KeychainCompatibility.h"
+#import "gtm-session-fetcher/Source/GTMSessionFetcherOSX/GTMSessionFetcherOSX.h"
 #else
 #warn "Platform Undefined"
 #endif
