@@ -2,7 +2,7 @@
 //  GTMSessionFetcherIOS.h
 //
 
-#import "./GTMSessionFetcher.h"
+#import "../GTMSessionFetcher.h"
 #import "../GTMSessionFetcherService.h"
 #import "../GTMSessionUploadFetcher.h"
 #import "../GTMSessionFetcherService.h"
