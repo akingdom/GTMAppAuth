@@ -23,10 +23,12 @@
 #elif TARGET_OS_WATCH
 #elif TARGET_OS_IOS
 #import "GTMOAuth2KeychainCompatibility/GTMOAuth2KeychainCompatibility.h"
+#import "gtm-session-fetcher/Source/GTMSessionFetcher.h"
 #import "gtm-session-fetcher/Source/GTMSessionFetcherIOS/GTMSessionFetcherIOS.h"
 #import "AppAuth-iOS/Source/CoreFramework/AppAuthCore.h"
 #elif TARGET_OS_MAC
 #import "GTMOAuth2KeychainCompatibility/GTMOAuth2KeychainCompatibility.h"
+#import "gtm-session-fetcher/Source/GTMSessionFetcher.h"
 #import "gtm-session-fetcher/Source/GTMSessionFetcherOSX/GTMSessionFetcherOSX.h"
 #import "AppAuth-iOS/Source/CoreFramework/AppAuthCore.h"
 #else
