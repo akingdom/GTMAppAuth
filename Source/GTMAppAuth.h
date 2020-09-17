@@ -16,9 +16,6 @@
         limitations under the License.
  */
 
-#import "GTMAppAuthFetcherAuthorization.h"
-#import "GTMAppAuthFetcherAuthorization+Keychain.h"
-
 #if TARGET_OS_TV
 #elif TARGET_OS_WATCH
 #elif TARGET_OS_IOS
@@ -34,3 +31,6 @@
 #else
 #warn "Platform Undefined"
 #endif
+
+#import "GTMAppAuthFetcherAuthorization.h"
+#import "GTMAppAuthFetcherAuthorization+Keychain.h"
