@@ -377,18 +377,20 @@
 extern "C" {
 #endif
 
+// TODO -- sort this out...
 // was...|| (!TARGET_OS_IPHONE && defined(MAC_OS_X_VERSION_10_11) && MAC_OS_X_VERSION_MAX_ALLOWED >= MAC_OS_X_VERSION_10_11) -backslash-
 
-#if (TARGET_OS_TV \
-     || TARGET_OS_WATCH \
-     || (defined(MAC_OS_X_VERSION_10_11) && MAC_OS_X_VERSION_MAX_ALLOWED >= MAC_OS_X_VERSION_10_11) \
-     || (TARGET_OS_IPHONE && defined(__IPHONE_9_0) && __IPHONE_OS_VERSION_MAX_ALLOWED >= __IPHONE_9_0))
-  #ifndef GTM_USE_SESSION_FETCHER
+// #if (TARGET_OS_TV \
+//      || TARGET_OS_WATCH \
+//      || (defined(MAC_OS_X_VERSION_10_11) && MAC_OS_X_VERSION_MAX_ALLOWED >= MAC_OS_X_VERSION_10_11) \
+//      || (TARGET_OS_IPHONE && defined(__IPHONE_9_0) && __IPHONE_OS_VERSION_MAX_ALLOWED >= __IPHONE_9_0))
+//   #ifndef GTM_USE_SESSION_FETCHER
     #define GTM_USE_SESSION_FETCHER 1
-  #endif
-#endif
+//   #endif
+// #endif
 
-#if !defined(GTMBridgeFetcher)
+#if !defined(GTMBridgeFetcher1)
+  #define GTMBridgeFetcher1 1
   // These bridge macros should be identical in GTMHTTPFetcher.h and GTMSessionFetcher.h
   #if GTM_USE_SESSION_FETCHER
   // Macros to new fetcher class.
