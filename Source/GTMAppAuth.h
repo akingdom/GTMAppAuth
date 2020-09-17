@@ -29,7 +29,7 @@
 #import "AppAuth-iOS/Source/CoreFramework/AppAuthCore.h"
 #import "GTMOAuth2KeychainCompatibility/GTMOAuth2KeychainCompatibility.h"
 #else
-#warn "Platform Undefined"
+#warning "Platform Undefined"
 #endif
 
 #import "GTMAppAuthFetcherAuthorization.h"
