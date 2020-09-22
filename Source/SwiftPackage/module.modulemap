@@ -5,5 +5,12 @@ module GTMAppAuth {
     header "../GTMKeychain.h"
     header "../GTMOAuth2KeychainCompatibility/GTMOAuth2KeychainCompatibility.h"
     header "../AppAuthCore/OIDAuthorizationService.m"
+    header "../AppAuthCore/OIDAuthState.h"
+    header "../AppAuthCore/OIDAuthStateChangeDelegate.h"
+    header "../GTMSessionFetcher.h"
+    header "../GTMSessionFetcher.m"
+    header "../GTMSessionFetcherLogging.h"
+    header "../GTMSessionFetcherService.h"
+    header "../GTMSessionUploadFetcher.h"
     export *
 }
