@@ -79,6 +79,7 @@ let package = Package(
                 "AppAuth-iOS/Source/AppAuth/macOS/LoopbackHTTPServer",
                 "AppAuth-iOS/Source/AppAuthCore",
                 "AppAuth-iOS/Source/AppAuthCore/OIDAuthState.h",
+                "AppAuth-iOS/Source/AppAuthCore/OIDAuthStateChangeDelegate.h",
                 "gtm-session-fetcher/Source/GTMSessionFetcher.h",
                 "gtm-session-fetcher/Source/GTMSessionFetcher.m",
                 "gtm-session-fetcher/Source/GTMSessionFetcherLogging.h",
@@ -96,6 +97,6 @@ let package = Package(
                 .headerSearchPath("AppAuth-iOS/Source/AppAuth/macOS"),
                 .headerSearchPath("AppAuth-iOS/Source/AppAuth/macOS/LoopbackHTTPServer")
             ]
-        ),        
+        ),
       ]
 )
