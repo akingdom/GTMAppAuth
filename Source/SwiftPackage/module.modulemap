@@ -4,10 +4,6 @@ module GTMAppAuth {
     header "../GTMAppAuthFetcherAuthorization+Keychain.h"
     header "../GTMKeychain.h"
     header "../GTMOAuth2KeychainCompatibility/GTMOAuth2KeychainCompatibility.h"
-    header "../GTMOAuth2KeychainCompatibility"
-    header "../AppAuthCore/"
-    header "../AppAuth_iOS/"
-    header "../AppAuth_macOS"
-    header "../AppAuth_macOS/LoopbackHTTPServer"
+    
     export *
 }
