@@ -19,7 +19,7 @@
 // #ifndef GTMAPPAUTH_USER_IMPORTS
 // #import <GTMSessionFetcher/GTMSessionFetcher.h>
 // #else // GTMAPPAUTH_USER_IMPORTS
-#import "gtm-session-fetcher/Source/GTMSessionFetcher.h"
+#import "GTMSessionFetcher.h"
 // #endif // GTMAPPAUTH_USER_IMPORTS
 
 @class OIDAuthState;

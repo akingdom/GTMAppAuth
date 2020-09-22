@@ -22,16 +22,16 @@
 #import "gtm-session-fetcher/Source/GTMSessionFetcher.h"
 #import "gtm-session-fetcher/Source/GTMSessionFetcherIOS/GTMSessionFetcherIOS.h"
 #import "AppAuth-iOS/Source/CoreFramework/AppAuthCore.h"
-#import "AppAuth-iOS/Source/AppAuthCore/OIDAuthState.h"
-#import "AppAuth-iOS/Source/AppAuthCore/OIDAuthStateChangeDelegate.h"
+#import "AppAuthCore/OIDAuthState.h"
+#import "AppAuthCore/OIDAuthStateChangeDelegate.h"
 #import "GTMOAuth2KeychainCompatibility/GTMOAuth2KeychainCompatibility.h"
 #elif TARGET_OS_MAC
 #warning "TARGET_OS_MAC ok"
 #import "gtm-session-fetcher/Source/GTMSessionFetcher.h"
 #import "gtm-session-fetcher/Source/GTMSessionFetcherOSX/GTMSessionFetcherOSX.h"
 #import "AppAuth-iOS/Source/CoreFramework/AppAuthCore.h"
-#import "AppAuth-iOS/Source/AppAuthCore/OIDAuthState.h"
-#import "AppAuth-iOS/Source/AppAuthCore/OIDAuthStateChangeDelegate.h",
+#import "AppAuthCore/OIDAuthState.h"
+#import "AppAuthCore/OIDAuthStateChangeDelegate.h",
 #import "GTMOAuth2KeychainCompatibility/GTMOAuth2KeychainCompatibility.h"
 #else
 #warning "Platform Undefined"
