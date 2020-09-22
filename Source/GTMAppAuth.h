@@ -15,18 +15,19 @@
         See the License for the specific language governing permissions and
         limitations under the License.
  */
-
 #if TARGET_OS_TV
 #elif TARGET_OS_WATCH
 #elif TARGET_OS_IOS
 #import "gtm-session-fetcher/Source/GTMSessionFetcher.h"
 #import "gtm-session-fetcher/Source/GTMSessionFetcherIOS/GTMSessionFetcherIOS.h"
 #import "AppAuth-iOS/Source/CoreFramework/AppAuthCore.h"
+#import "AppAuth-iOS/Source/AppAuthCore/OIDAuthStateChangeDelegate.h",
 #import "GTMOAuth2KeychainCompatibility/GTMOAuth2KeychainCompatibility.h"
 #elif TARGET_OS_MAC
 #import "gtm-session-fetcher/Source/GTMSessionFetcher.h"
 #import "gtm-session-fetcher/Source/GTMSessionFetcherOSX/GTMSessionFetcherOSX.h"
 #import "AppAuth-iOS/Source/CoreFramework/AppAuthCore.h"
+#import "AppAuth-iOS/Source/AppAuthCore/OIDAuthStateChangeDelegate.h",
 #import "GTMOAuth2KeychainCompatibility/GTMOAuth2KeychainCompatibility.h"
 #else
 #warning "Platform Undefined"
