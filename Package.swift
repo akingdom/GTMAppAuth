@@ -73,6 +73,10 @@ let package = Package(
                 "iOS",
                 "macOS",
                 "AppAuth-iOS/Source",
+                "AppAuth-iOS/Source/AppAuth/",
+                "AppAuth-iOS/Source/AppAuth/iOS/",
+                "AppAuth-iOS/Source/AppAuth/macOS/",
+                "AppAuth-iOS/Source/AppAuth/macOS/LoopbackHTTPServer",
                 "AppAuth-iOS/Source/AppAuthCore",
                 "AppAuth-iOS/Source/AppAuthCore/OIDAuthState.h",
                 "gtm-session-fetcher/Source/GTMSessionFetcher.h",
@@ -87,8 +91,11 @@ let package = Package(
             publicHeadersPath: "SwiftPackage",
             cSettings: [
                 .headerSearchPath("."),
-                .headerSearchPath("GTMOAuth2KeychainCompatibility")
+                .headerSearchPath("GTMOAuth2KeychainCompatibility"),
+                .headerSearchPath("AppAuth-iOS/Source/AppAuth/iOS/"),
+                .headerSearchPath("AppAuth-iOS/Source/AppAuth/macOS"),
+                .headerSearchPath("AppAuth-iOS/Source/AppAuth/macOS/LoopbackHTTPServer")
             ]
-        ),
-    ]
+        ),        
+      ]
 )
