@@ -7,6 +7,7 @@ module GTMAppAuth {
     header "../AppAuthCore/OIDAuthorizationService.m"
     header "../AppAuthCore/OIDAuthState.h"
     header "../AppAuthCore/OIDAuthStateChangeDelegate.h"
+    header "../AppAuthCore/OIDAuthStateErrorDelegate.h"
     header "../GTMSessionFetcher.h"
     header "../GTMSessionFetcher.m"
     header "../GTMSessionFetcherLogging.h"
