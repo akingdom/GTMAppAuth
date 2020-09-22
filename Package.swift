@@ -93,6 +93,7 @@ let package = Package(
             cSettings: [
                 .headerSearchPath("."),
                 .headerSearchPath("GTMOAuth2KeychainCompatibility"),
+                .headerSearchPath("AppAuth-iOS/Source/AppAuthCore/"),
                 .headerSearchPath("AppAuth-iOS/Source/AppAuth/iOS/"),
                 .headerSearchPath("AppAuth-iOS/Source/AppAuth/macOS"),
                 .headerSearchPath("AppAuth-iOS/Source/AppAuth/macOS/LoopbackHTTPServer")
