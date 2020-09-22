@@ -29,8 +29,8 @@ let package = Package(
             ],
             path: "Source",
             exclude:[
-                "AppAuth-iOS!",
-                "gtm-session-fetcher!"
+//                "AppAuth-iOS!",
+//                "gtm-session-fetcher!"
 //                "gtm-session-fetcher",
 //                "gtm-session-fetcher/update_version.py",
 //                "gtm-session-fetcher/.git",
